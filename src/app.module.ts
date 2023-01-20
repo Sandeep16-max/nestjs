@@ -10,9 +10,10 @@ import { Store } from "./stores/sss";
 import { pap } from './injectable.controller';
 import { valueprovider } from './valueprovider.controller';
 import { getMaxListeners } from 'process';
+import { users1 } from './users1.controller';
 
 @Module({
-  controllers: [UsersController, AlbumsController, ParameterController, DataController, Operation, p, pap, valueprovider],
+  controllers: [UsersController, AlbumsController, ParameterController, DataController, Operation, p, pap, valueprovider,users1],
   // providers:[{provide: "store", useClass:UsersStore}]
   //as injection token and class name is same we can also write it as 
   //providers:[UsersStore,{provide: "Store", useExisting:UsersStore}],
